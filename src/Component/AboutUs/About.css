@@ -1,0 +1,25 @@
+.banner img{
+    width: 100%;
+    height: 300px;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: darkslategrey;
+    color: white;
+}
+.about-right{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.founder{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+@media only screen and (max-width:688px){
+    .aboutUs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

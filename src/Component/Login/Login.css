@@ -1,0 +1,10 @@
+.input{
+    width: 300px ;
+    margin-left: 500px;
+}
+.google-btn{
+    background-color: #13BFB1;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid rgb(243, 34, 34);
+}

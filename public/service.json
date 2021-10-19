@@ -1,0 +1,83 @@
+[{
+    "id": 1,
+    "doctors": "Deb Grinter",
+    "service": "Nutrition",
+    "price": "2000",
+    "img": "https://www.demo.unitemplates.com/medico/images/pediatrics/services_001.jpg",
+    "institute": "Christian Brothers University",
+    "details": "Immunizations protect children. Vaccine-preventable diseases have dangerous consequences, including seizures, brain damage, blindness and even death. Because of the success of the national immunization program, many young parents today have never seen a case of one of these illnesses, but measles, meningitis, chickenpox, pertussis and other diseases exist in the world and would re-emerge here if immunization rates fell. For example, recent outbreaks of measles in the US were traced to unvaccinated children who became infected while traveling in Europe."
+    
+  }, {
+    "id": 2,
+    "doctors": "Corri Concannon",
+    "service": "Odontology",
+    "img": "https://www.demo.unitemplates.com/medico/images/pediatrics/services_002.jpg",
+    "price": "300",
+    "institute": "Cogswell Polytechnical College",
+    "details": "We would like to welcome you to Child Health Care Associates. We are accepting new patients from newborns up to and including children 15 years of age.  For your convenience, we have provided the standard forms that you will need to fill out and bring to your next appointment. If you have any questions, call us at (315) 463-2013 or (315) 652-8800."
+  }, {
+    "id": 3,
+    "doctors": "Granny Sever",
+    "service": "Physiotherapy",
+    "img": "https://www.demo.unitemplates.com/medico/images/pediatrics/services_008.jpg",
+    "price": "350",
+    "institute": "Ecole Supérieure de Commerce de Pau",
+    "details": "Child Health Care Associates works hard to provide same day access for your sick or injured child’s needs. Well child care visits are scheduled in advance, though often can be accommodated quickly if you are willing to be flexible about the doctor you see. Consultations for medical or behavioral problems and that are longstanding (greater than 2 weeks) should also be scheduled in advance."
+  }, {
+    "id": 4,
+    "doctors": "Sarina Wallwood",
+    "service": "Surgery",
+    "img": "https://www.demo.unitemplates.com/medico/images/pediatrics/services_007.jpg",
+    "price": "300",
+    "institute": "Institut National des Sciences Appliquées de Rennes",
+    "details": "It is important for your pediatrician to track your child’s development and milestones, check blood levels, and administer vaccinations. Infants are seen at 2 weeks, and at 2, 4, 6, 9, 12, 15, 18, and 24 months. An annual well child exam is recommended thereafter."
+  }, {
+    "id": 5,
+    "doctors": "Hill Templeton",
+    "service": "Emargency",
+    "img": "https://www.demo.unitemplates.com/medico/images/pediatrics/services_005.jpg",
+    "price": "200",
+    "institute": "Pontificia Universidad Católica del Ecuador",
+    "details": "Ear piercing is available only through Dr. Odin.Must be at least 8 years (patients as young as 6 may be considered if they really want it done).No cartilage, 2nd piercings, belly, or nose. Ears Only.Cash only: $75 (will not be submitted to insurance)."
+  }, {
+    "id": 6,
+    "doctors": "Claiborn Beidebeke",
+    "service": "Laboratory",
+    "img": "https://www.demo.unitemplates.com/medico/images/pediatrics/services_006.jpg",
+    "price": "250",
+    "institute": "Ibaraki Christian College",
+    "details": "Most children are recommended ABA therapy, but few parents realize they have more options. Looking for a therapist for your autistic child? We can help you choose a good one."
+  }, {
+    "id": 7,
+    "doctors": "Cristy Gummie",
+    "service": "Autistic child",
+    "img": "https://psmag.com/.image/t_share/MTI3NTgyNDM0NjM1MTkyNzk4/childhood-health.jpg",
+    "price": "250",
+    "institute": "Universitas Bung Hatta",
+    "details": "We would like to welcome you to Child Health Care Associates. We are accepting new patients from newborns up to and including children 15 years of age.  For your convenience, we have provided the standard forms that you will need to fill out and bring to your next appointment. If you have any questions, call us at (315) 463-2013 or (315) 652-8800"
+  }, {
+    "id": 8,
+    "doctors": "Selie Muskett",
+    "service": "well child",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWavk51l44-BTsMZjiCA96l-Hx4N_dpzUlVHf19fHu3y9k1rpsO6bmjq9TQttCdvaQ3eI&usqp=CAU",
+    "price": "350",
+    "institute": "Latvian Academy of Music",
+    "details": "Raising a family isn’t always easy. You are busy, and so are your children. There is a lot to do in little time. But the stakes are high. Today, many kids are overweight or obese. A healthy, active lifestyle can help maintain weight. It also can prevent health issues, such as diabetes, heart disease, asthma, and high blood pressure."
+  }, {
+    "id": 9,
+    "doctors": "Benji Minchell",
+    "service": "Helping doctors",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtbuD4xFTxoVMe_Wnrtb75qIwu1l9v84WIOkZR1zojl8hSjC5xGutHeweS8UgLhSKX254&usqp=CAU",
+    "price": "370",
+    "institute": "Universidad Centroamericana",
+    "details": "Suicide is the Leading Health-Related Cause of Death for Young People in Canada. We Train and Support Young People to Improve Mental Health in their Communities. Find Resources. Community Groups. Impatient for change? Schools. Personal Stories"
+  }, {
+    "id": 10,
+    "doctors": "Andrea Kuscha",
+    "service": "insurance service",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF8UizfAUSVKn_Em5d5s-pMWLAS1JW_damuv5Ya-W1Nrbc6AgnZZ3jvINIbI0btPdzCZ4&usqp=CAU",
+    "price": "100",
+    "institute": "Moscow State Institute of International Relations MFA Russia (MGIMO-University)",
+    "details": "Markel Specialty can provide you with customizable insurance products along with knowledgeable, friendly claims service professionals to help you when you need help the most. We have a variety of coverage limits available at an affordable price, all built specifically with the in-home child care provider in mind."
+  }]
+  
