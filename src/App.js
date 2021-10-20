@@ -36,7 +36,7 @@ function App() {
             <Services></Services>
             <Footer></Footer>
           </PrivateRout>
-          <PrivateRout path="/details/:serviceId">
+          <PrivateRout path="/details/:id">
             <Header></Header>
             <Details></Details>
             <Footer></Footer>

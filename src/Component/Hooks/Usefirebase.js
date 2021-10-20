@@ -1,93 +1,91 @@
-import { useEffect, useState } from "react";
-import { GoogleAuthProvider, getAuth,signInWithPopup, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import initializeAuthentication from "../Firebase/Firebase.init";
+import { useEffect, useState } from 'react';
+import initAuth from '../Firebase/Firebase.init';
+import { getAuth,GoogleAuthProvider,signInWithPopup,signOut,createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged } from "firebase/auth";
 
-initializeAuthentication();
-const useFirebase = () =>{
 
-    const [user, setUser] = useState({});
-    const [error, setError] = useState('')
+
+initAuth()
+
+const useFirebase = () => {
+
     const auth = getAuth();
-    const GoogleProvider = new GoogleAuthProvider();
-    const signInUsingGoole = () =>{
-        signInWithPopup(auth, GoogleProvider)
-        .then(result => {
-            setUser(result.user)
+    const provider = new GoogleAuthProvider();
+
+
+    const [user,setUser] = useState({})
+    const [error,setError] = useState('')
+    const [name,setName] = useState('')
+    const [email,setEmail] = useState('')
+    const [pass,setPass] = useState('')
+ 
+    const handleGoogleSign = () => {
+        return signInWithPopup(auth, provider)
+            
+    }
+
+
+
+    const signOutt = () => {
+        signOut(auth).then(() => {
+            setUser({})
+          }).catch((error) => {
+            setError(error.message)
+          });
+    }
+
+
+
+    const handleName = e => {
+        setName(e.target.value)
+    }
+    const handleEmail = e => {
+        setEmail(e.target.value)
+    }
+    const handlePass = e => {
+        setPass(e.target.value)
+    }
+
+
+
+
+
+    const signUpp = () => {
+        createUserWithEmailAndPassword(auth, email, pass)
+        .then((result) => {
+            const newUser = result.user
+            newUser.displayName = name
+            setUser(newUser)
         })
-        .catch(error => {
-            setError(error.message);
-        })
-    }
-    
-    const [email, SetEmail] = useState('');
-    const [password, SetPassword] = useState('');
-    
-    const handleEmailChange = e => {
-       SetEmail(e.target.value);
-    }
-    const handlePasswordChange = e => {
-        SetPassword(e.target.value);
+        .catch((error) => {
+            setError(error.message)
+        });
     }
 
 
-
- //create user
-    const handleRegistration = e =>{
-       createUserWithEmailAndPassword(auth, email, password)
-       .then(result => {
-           const user = result.user;
-           console.log(user)
-           setError(' ');
-       })
-       .catch(error => {
-           setError(error.message);
-       })
-
-        e.preventDefault();
-    }
-    
-   
-    //sign in user
-    const SignInUser = (Email, Password) =>{
-        signInWithEmailAndPassword(auth, Email, Password)
-       .then(result => {
-           const user = result.user;
-           console.log(user)
-           setError(' ');
-       })
-       .catch(error => {
-           setError(error.message);
-       })
-    
+    const loggIn = () => {
+        signInWithEmailAndPassword(auth, email, pass)
+            .then((result) => {
+                setUser(result.user)
+            })
+            .catch((error) => {
+                setError(error.message)
+            });
     }
 
-    
-    const logOut = () =>{
-        signOut(auth)
-        .then(() =>{
-            setUser({});
-        })
-    }
-    useEffect( () =>{
-        const unsubscribed = onAuthStateChanged(auth, user=>{
-            if(user){
-                setUser(user);
+    useEffect(()=>{
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user)
+            } else {
             }
-            else{
-                setUser({})
-            }
-        })
-        return () => unsubscribed;
-    }, [])
+          });
+    },[])
+
+
+
     return {
-        user,
-        error,
-        signInUsingGoole,
-        logOut,
-        handleRegistration,
-        handleEmailChange,
-        handlePasswordChange,
-
+        handleGoogleSign,user,error,signOutt,handleName,handleEmail,handlePass,signUpp,loggIn
     }
-}
+};
+
 export default useFirebase;
