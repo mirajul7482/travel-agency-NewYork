@@ -1,9 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyC8IhzP-57w5IVWT9PtYXkT38sofUX3wpg",
-    authDomain: "child-health-care-center.firebaseapp.com",
-    projectId: "child-health-care-center",
-    storageBucket: "child-health-care-center.appspot.com",
-    messagingSenderId: "510708233214",
-    appId: "1:510708233214:web:6235528e2ab66c7e1286af"
-  };
+  apiKey: "AIzaSyDX9pas8wYHdr2QK90qCdrb5wC8x102rcQ",
+  authDomain: "travel-agency-new-york.firebaseapp.com",
+  projectId: "travel-agency-new-york",
+  storageBucket: "travel-agency-new-york.appspot.com",
+  messagingSenderId: "292971670922",
+  appId: "1:292971670922:web:54babd9c12a60c26f16c73"
+};
+
   export default firebaseConfig;

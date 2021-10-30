@@ -2,9 +2,6 @@ import { faArrowCircleRight, faArrowRight } from '@fortawesome/free-solid-svg-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Accordion, Carousel } from 'react-bootstrap';
-import caroselimg1 from '../img/carosel-img1.jpg'
-import caroselimg2 from '../img/carosel-img2.jpg'
-import caroselimg3 from '../img/carosel-img3.jpg'
 import img4 from '../img/ped_01.jpg'
 
 import Service from '../Service/Service';
@@ -14,7 +11,7 @@ const Home = () => {
     const [services, setservices] = useState([]);
 
     useEffect(() =>{
-        fetch('./service.json')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setservices(data))
     }, [])
@@ -25,7 +22,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100 h-25"
-                    src={caroselimg1}
+                    src="https://wander-lush.org/wp-content/uploads/2020/01/Phandar-Valley-Beautiful-places-in-Pakistan-Depositphotos.jpg"
                     alt="First slide"
                     />
                     <Carousel.Caption >
@@ -36,7 +33,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100 h-25"
-                    src={caroselimg2}
+                    src="https://www.touropia.com/gfx/b/2013/06/ottawa-1.jpg"
                     alt="Second slide"
                     />
 
@@ -49,7 +46,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100 h-25"
-                    src={caroselimg3}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPyIjx23FW3k1NoHwtUwAlvlOMi5Z1iZZbvkyQHxN4uc6ep9V_WWUGDZ7Y9mvxdYonhM&usqp=CAU"
                     alt="Third slide"
                     />
 

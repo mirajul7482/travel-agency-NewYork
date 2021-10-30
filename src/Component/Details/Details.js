@@ -6,7 +6,7 @@ const Details = () => {
     const {id} = useParams();
     
     useEffect(()=>{
-        fetch('/service.json')
+        fetch('http://localhost:5000/services')
         .then(res=>res.json())
         .then(data => setService(data.find(x => x.id === +id)))
     }, [])
@@ -16,7 +16,7 @@ const Details = () => {
             <h2>service id : {id}</h2>
             <div className="service pb-3">
                 <img src={service.img} alt="" />
-                <h2>Service: {service.service}</h2>
+                <h2>Service: {service.name}</h2>
                 <p>{service.details}</p>
                 
             </div>

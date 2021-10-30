@@ -4,19 +4,19 @@ import './Service.css'
 
 const Service = (props) => {
     
-    const {id, img, service, details} = props.service;
+    const {id, img, name, details} = props.service;
     const history = useHistory();
-    const Details = () =>{
+    const sDetails = () =>{
         history.push(`/details/${id}`)
     }
     return (
         <div>
             <div className="service pb-3">
                 <img src={img} alt="" />
-                <h2>Service: {service}</h2>
+                <h2>{name}</h2>
                 <p>{details.slice(0,200)}</p>
                 
-                <button onClick={Details} className="outbtn btn btn-warning rounded "
+                <button onClick={sDetails} className="outbtn btn btn-warning rounded "
                 > Details</button>
                 
             </div>
