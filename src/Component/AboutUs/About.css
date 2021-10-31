@@ -5,8 +5,9 @@
 .aboutUs{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: darkslategrey;
+    background-color: rgb(105, 107, 107);
     color: white;
+    padding-top: 100px;
 }
 .about-right{
     text-align: center;
@@ -14,8 +15,15 @@
     margin-left: 30px;
 }
 .founder{
-    margin-left: 150px;
-    margin-top: 30px;
+    margin-left: 250px;
+    margin-top: 150px;
+    margin-left: 50px;
+    justify-content: center;
+
+}
+.founder img{
+    width: 80px;
+    height: 80px;
 }
 @media only screen and (max-width:688px){
     .aboutUs{

@@ -7,12 +7,14 @@ import Blog from './Component/Blog/Blog';
 import Login from './Component/Login/Login';
 import Notfound from './Component/Notfound/Notfound'
 import Header from './Component/Header/Header';
-import Services from './Component/Services/Services';
-import Details from './Component/Details/Details';
 import AuthProvider from './Component/Context/AuthProvider';
 import PrivateRout from './Component/PrivateRout/PrivateRout';
 import Footer from './Component/footer/Footer';
 import Register from './Component/Register/Register';
+import Selected from './Component/Details/Selected';
+import CreateNewEvent from './Component/CreateNewEvent/CreateNewEvent';
+import MyOrder from './Component/MyOrder/MyOrder';
+import Manage from './Component/Manage/Manage';
 
 function App() {
   return (
@@ -31,14 +33,14 @@ function App() {
             <Home></Home>
             <Footer></Footer>
           </Route>
-          <PrivateRout path="/services">
+          <PrivateRout path="/createnewevent">
             <Header></Header>
-            <Services></Services>
+            <CreateNewEvent></CreateNewEvent>
             <Footer></Footer>
           </PrivateRout>
-          <PrivateRout path="/details/:id">
+          <PrivateRout path="/selected/:id">
             <Header></Header>
-            <Details></Details>
+            <Selected></Selected>
             <Footer></Footer>
           </PrivateRout>
           <PrivateRout path="/aboutus">
@@ -49,6 +51,16 @@ function App() {
           <PrivateRout path="/blog">
             <Header></Header>
              <Blog></Blog>
+             <Footer></Footer>
+          </PrivateRout>
+          <PrivateRout path="/booking">
+            <Header></Header>
+             <MyOrder></MyOrder>
+             <Footer></Footer>
+          </PrivateRout>
+          <PrivateRout path="/management">
+            <Header></Header>
+             <Manage></Manage>
              <Footer></Footer>
           </PrivateRout>
           <Route path="/login">

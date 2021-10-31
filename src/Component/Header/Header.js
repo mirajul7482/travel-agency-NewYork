@@ -18,7 +18,7 @@ const Header = () => {
             >
                 <Nav.Link as={Link} to={"/home"} className="fs-3 fw-bolder ">Home</Nav.Link>
                 <Nav.Link  as={Link} to={"/aboutus"} className="fs-3 fw-bolder">AboutUs</Nav.Link>
-                <Nav.Link  as={Link} to={"/services"} className="fs-3 fw-bolder">Services</Nav.Link>
+                <Nav.Link  as={Link} to={"/createnewevent"} className="fs-3 fw-bolder">createNewEvent</Nav.Link>
                 <Nav.Link  as={Link} to={"/blog"} className="fs-3 fw-bolder"> Blog</Nav.Link>
                 
                 {user?.email ? 
@@ -26,6 +26,16 @@ const Header = () => {
                 :
                 <Nav.Link  as={Link} to={"/login"} className="fs-3 fw-bolder"> Login</Nav.Link>
                 }
+                {
+                user?.email && <Nav.Link as={Link} to="/booking">
+                My Order
+              </Nav.Link>
+              }
+              {
+                (user?.email) && <Nav.Link as={Link} to="/management">
+                Managment
+              </Nav.Link>
+              }
                 <Navbar.Text>
                     sign in as: <a href="#login">{user?.displayName }</a>
                 </Navbar.Text>

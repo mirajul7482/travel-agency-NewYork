@@ -12,8 +12,8 @@ const Footer = () => {
     return (
         <div className="footer " fixed="bottom">
             <div>
-                <h2>About Medico</h2>
-                <p>Medico provides the highest quality concierge medicine services and assistance navigating today's complex healthcare environment for any individual desiring personalized medical care from their physician.</p>
+                <h2>About travel agency NewYork</h2>
+                <p>NewYork travel agency is the best agency in the world it is very important that if wont to visite safly in world you can visite us</p>
             </div>
             <div>
                 <h2>Quick Links</h2>
@@ -38,15 +38,15 @@ const Footer = () => {
                 <div className="d-flex">
                     <img src={img} alt="" />
                     <div>
-                        <h4>Constant check</h4>
-                        <p>Seamlessly embrace client-based solutions rather t...</p>
+                        <h4>Italian visitors</h4>
+                        <p>Now we give up 30% off italian visitors.</p>
                     </div>
                 </div>
                 <div className="d-flex">
                     <img src={img2} alt="" />
                     <div>
-                        <h4>Early stimulation</h4>
-                        <p>Seamlessly embrace client-based solutions rather t...</p>
+                        <h4>Uk trip</h4>
+                        <p>presntly most of the visitor like very much to visite Uk </p>
                     </div>
                 </div>
                 

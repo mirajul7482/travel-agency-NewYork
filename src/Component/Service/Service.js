@@ -7,7 +7,7 @@ const Service = (props) => {
     const {id, img, name, details} = props.service;
     const history = useHistory();
     const sDetails = () =>{
-        history.push(`/details/${id}`)
+        history.push(`/selected/${id}`)
     }
     return (
         <div>
@@ -17,7 +17,7 @@ const Service = (props) => {
                 <p>{details.slice(0,200)}</p>
                 
                 <button onClick={sDetails} className="outbtn btn btn-warning rounded "
-                > Details</button>
+                > Book Now</button>
                 
             </div>
         </div>
